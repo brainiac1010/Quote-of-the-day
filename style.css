@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,6 @@
     font-family: "Playfair Display SC", serif;
     font-weight: 700;
     font-style: normal;
-
-
 }
 
 body {
@@ -50,7 +47,6 @@ body {
 .quote-box blockquote {
     font-size: 26px;
     min-height: 110px;
-
 }
 
 .quote-box blockquote::before,
@@ -104,4 +100,46 @@ body {
 .quote-box button:nth-child(2){
     background: transparent;
     color: #333;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .quote-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quote-box h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .quote-box h2::after {
+        width: 50px;
+        bottom: -8px;
+    }
+
+    .quote-box blockquote {
+        font-size: 20px;
+        min-height: 80px;
+    }
+
+    .quote-box span::before {
+        width: 15px;
+        left: -20px;
+    }
+
+    .quote-box div {
+        margin-top: 30px;
+    }
+
+    .quote-box button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .quote-box button img {
+        width: 18px;
+        margin-right: 8px;
+    }
 }
